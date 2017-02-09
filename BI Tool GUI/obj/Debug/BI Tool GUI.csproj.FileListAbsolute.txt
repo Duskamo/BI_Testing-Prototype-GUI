@@ -11,14 +11,3 @@ D:\Professional\Perficient Tools\BI Testing Tool\BI Tool GUI\BI Tool GUI\obj\Deb
 D:\Professional\Perficient Tools\BI Testing Tool\BI Tool GUI\BI Tool GUI\bin\Debug\MetroFramework.dll
 D:\Professional\Perficient Tools\BI Testing Tool\BI Tool GUI\BI Tool GUI\bin\Debug\MetroFramework.Fonts.dll
 D:\Professional\Perficient Tools\BI Testing Tool\BI Tool GUI\BI Tool GUI\obj\Debug\BI Tool GUI.csprojResolveAssemblyReference.cache
-C:\Users\travis.layne\Desktop\BIPrototype\BI Tool GUI\bin\Debug\BI Tool GUI.exe.config
-C:\Users\travis.layne\Desktop\BIPrototype\BI Tool GUI\obj\Debug\BI Tool GUI.exe
-C:\Users\travis.layne\Desktop\BIPrototype\BI Tool GUI\obj\Debug\BI Tool GUI.pdb
-C:\Users\travis.layne\Desktop\BIPrototype\BI Tool GUI\bin\Debug\BI Tool GUI.exe
-C:\Users\travis.layne\Desktop\BIPrototype\BI Tool GUI\bin\Debug\BI Tool GUI.pdb
-C:\Users\travis.layne\Desktop\BIPrototype\BI Tool GUI\bin\Debug\MetroFramework.dll
-C:\Users\travis.layne\Desktop\BIPrototype\BI Tool GUI\bin\Debug\MetroFramework.Fonts.dll
-C:\Users\travis.layne\Desktop\BIPrototype\BI Tool GUI\obj\Debug\BI Tool GUI.csprojResolveAssemblyReference.cache
-C:\Users\travis.layne\Desktop\BIPrototype\BI Tool GUI\obj\Debug\BI_Tool_GUI.Form1.resources
-C:\Users\travis.layne\Desktop\BIPrototype\BI Tool GUI\obj\Debug\BI_Tool_GUI.Properties.Resources.resources
-C:\Users\travis.layne\Desktop\BIPrototype\BI Tool GUI\obj\Debug\BI Tool GUI.csproj.GenerateResource.Cache
