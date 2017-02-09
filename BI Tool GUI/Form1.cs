@@ -46,7 +46,11 @@ namespace BI_Tool_GUI
             InitializeTestMenuSelection();
             InitializePanelMenuSelection();
             InitializeMappingDataGrid();
-
+            IntializeTabcontrols();
+        }
+        private void IntializeTabcontrols()
+        {
+            tctlCompare.Visible = false;
         }
         private void InitializeMappingDataGrid()
         {
@@ -198,7 +202,7 @@ namespace BI_Tool_GUI
 
         private void miTestCOnfigTest_Click(object sender, EventArgs e)
         {
-            
+            tctlCompare.Visible = true;
         }
 
         private void miTestMapColumns_Click(object sender, EventArgs e)
@@ -222,5 +226,7 @@ namespace BI_Tool_GUI
             mappingSaveBtn.Visible = false;
             dataGridMapping.Visible = false;
         }
+
+      
     }
 }
