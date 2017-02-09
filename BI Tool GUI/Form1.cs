@@ -19,6 +19,7 @@ namespace BI_Tool_GUI
         MenuItem miTestGroupNewTest = new MenuItem("New Test");
         MenuItem miTestGroupRenameGroup = new MenuItem("Rename Test Group");
         MenuItem miTestGroupDeleteGroup = new MenuItem("Delete Test Group");
+        MenuItem miTestCOnfigTest = new MenuItem("Confirgure Test");
         MenuItem miTestMapColumns = new MenuItem("Map Columns");
         MenuItem miTestDeleteTest = new MenuItem("Delete Test");
         MenuItem miNewTGNewGroup = new MenuItem("New Test Group");
@@ -44,8 +45,15 @@ namespace BI_Tool_GUI
             InitializeTestGroupMenuSelection();
             InitializeTestMenuSelection();
             InitializePanelMenuSelection();
-        }
+            InitializeMappingDataGrid();
 
+        }
+        private void InitializeMappingDataGrid()
+        {
+            mappingSaveBtn.Visible = false;
+            dataGridMapping.RowHeadersVisible = false;
+            dataGridMapping.Visible = false;
+        }
         private void InitializePanelMenuSelection()
         {
             mnuNewTG.MenuItems.Add(miNewTGNewGroup);
@@ -66,14 +74,15 @@ namespace BI_Tool_GUI
 
         private void InitializeTestMenuSelection()
         {
+            mnuTest.MenuItems.Add(miTestCOnfigTest);
+            miTestCOnfigTest.Click += new EventHandler(miTestCOnfigTest_Click);
+
             mnuTest.MenuItems.Add(miTestMapColumns);
             miTestMapColumns.Click += new EventHandler(miTestMapColumns_Click);
 
             mnuTest.MenuItems.Add(miTestDeleteTest);
             miTestDeleteTest.Click += new EventHandler(miTestDeleteTest_Click);
         }
-
-        
         #endregion
 
         #region GUI
@@ -187,9 +196,15 @@ namespace BI_Tool_GUI
             
         }
 
-        private void miTestMapColumns_Click(object sender, EventArgs e)
+        private void miTestCOnfigTest_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void miTestMapColumns_Click(object sender, EventArgs e)
+        {
+            mappingSaveBtn.Visible = true;
+            dataGridMapping.Visible = true;
         }
 
         private void miNewTGNewGroup_Click(object sender, EventArgs e)
@@ -202,5 +217,10 @@ namespace BI_Tool_GUI
         #endregion
 
 
+        private void mappingSaveBtn_Click(object sender, EventArgs e)
+        {
+            mappingSaveBtn.Visible = false;
+            dataGridMapping.Visible = false;
+        }
     }
 }
