@@ -36,6 +36,11 @@ namespace BI_Tool_GUI
             this.panel1 = new System.Windows.Forms.Panel();
             this.tvProject = new System.Windows.Forms.TreeView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dataGridMapping = new System.Windows.Forms.DataGridView();
+            this.Selected = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.SourceColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TargetColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Key = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dgvOutput = new System.Windows.Forms.DataGridView();
@@ -53,8 +58,10 @@ namespace BI_Tool_GUI
             this.closeProjectToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.mlProjectTitle = new MetroFramework.Controls.MetroLabel();
             this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
+            this.mappingSaveBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridMapping)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOutput)).BeginInit();
@@ -87,11 +94,58 @@ namespace BI_Tool_GUI
             // 
             this.panel2.AutoScroll = true;
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel2.Controls.Add(this.mappingSaveBtn);
+            this.panel2.Controls.Add(this.dataGridMapping);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(260, 36);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(774, 332);
             this.panel2.TabIndex = 1;
+            // 
+            // dataGridMapping
+            // 
+            this.dataGridMapping.AllowUserToAddRows = false;
+            this.dataGridMapping.AllowUserToDeleteRows = false;
+            this.dataGridMapping.AllowUserToResizeRows = false;
+            this.dataGridMapping.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridMapping.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridMapping.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Selected,
+            this.SourceColumn,
+            this.TargetColumn,
+            this.Key});
+            this.dataGridMapping.Location = new System.Drawing.Point(0, 0);
+            this.dataGridMapping.Name = "dataGridMapping";
+            this.dataGridMapping.RowHeadersWidth = 20;
+            this.dataGridMapping.Size = new System.Drawing.Size(774, 332);
+            this.dataGridMapping.TabIndex = 12;
+            // 
+            // Selected
+            // 
+            this.Selected.HeaderText = "Selected";
+            this.Selected.Name = "Selected";
+            this.Selected.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Selected.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Selected.Width = 55;
+            // 
+            // SourceColumn
+            // 
+            this.SourceColumn.HeaderText = "SourceColumn";
+            this.SourceColumn.Name = "SourceColumn";
+            // 
+            // TargetColumn
+            // 
+            this.TargetColumn.HeaderText = "TargetColumn";
+            this.TargetColumn.Name = "TargetColumn";
+            this.TargetColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.TargetColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Key
+            // 
+            this.Key.HeaderText = "Is Key?";
+            this.Key.Name = "Key";
+            this.Key.Width = 48;
             // 
             // pictureBox1
             // 
@@ -230,6 +284,16 @@ namespace BI_Tool_GUI
             this.metroStyleManager1.Style = MetroFramework.MetroColorStyle.Red;
             this.metroStyleManager1.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
+            // mappingSaveBtn
+            // 
+            this.mappingSaveBtn.Location = new System.Drawing.Point(702, 0);
+            this.mappingSaveBtn.Name = "mappingSaveBtn";
+            this.mappingSaveBtn.Size = new System.Drawing.Size(72, 24);
+            this.mappingSaveBtn.TabIndex = 13;
+            this.mappingSaveBtn.Text = "Save";
+            this.mappingSaveBtn.UseVisualStyleBackColor = true;
+            this.mappingSaveBtn.Click += new System.EventHandler(this.mappingSaveBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -246,6 +310,7 @@ namespace BI_Tool_GUI
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridMapping)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOutput)).EndInit();
@@ -279,6 +344,12 @@ namespace BI_Tool_GUI
         private System.Windows.Forms.ToolStripMenuItem openProjectToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem closeProjectToolStripMenuItem1;
         private System.Windows.Forms.Label lblProjectTitle;
+        private DataGridView dataGridMapping;
+        private DataGridViewCheckBoxColumn Selected;
+        private DataGridViewTextBoxColumn SourceColumn;
+        private DataGridViewComboBoxColumn TargetColumn;
+        private DataGridViewCheckBoxColumn Key;
+        private Button mappingSaveBtn;
     }
 }
 

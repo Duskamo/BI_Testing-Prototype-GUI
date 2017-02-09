@@ -44,8 +44,15 @@ namespace BI_Tool_GUI
             InitializeTestGroupMenuSelection();
             InitializeTestMenuSelection();
             InitializePanelMenuSelection();
-        }
+            InitializeMappingDataGrid();
 
+        }
+        private void InitializeMappingDataGrid()
+        {
+            mappingSaveBtn.Visible = false;
+            dataGridMapping.RowHeadersVisible = false;
+            dataGridMapping.Visible = false;
+        }
         private void InitializePanelMenuSelection()
         {
             mnuNewTG.MenuItems.Add(miNewTGNewGroup);
@@ -77,6 +84,7 @@ namespace BI_Tool_GUI
         #endregion
 
         #region GUI
+      
         private void AddSampleProjectGui()
         {
             lblProjectTitle.Text = "Compass DB Testing";
@@ -189,7 +197,12 @@ namespace BI_Tool_GUI
 
         private void miTestMapColumns_Click(object sender, EventArgs e)
         {
-            
+            //foreach(var x in dataGridMapping.Columns)
+            //{
+            //    Debug.WriteLine(x.ToString());
+            //}
+            mappingSaveBtn.Visible = true;
+            dataGridMapping.Visible = true;
         }
 
         private void miNewTGNewGroup_Click(object sender, EventArgs e)
@@ -199,8 +212,13 @@ namespace BI_Tool_GUI
             TreeNode treeNode = new TreeNode(promptValue);
             tvProject.Nodes.Add(treeNode);
         }
+
         #endregion
 
-
+        private void mappingSaveBtn_Click(object sender, EventArgs e)
+        {
+            mappingSaveBtn.Visible = false;
+            dataGridMapping.Visible = false;
+        }
     }
 }
