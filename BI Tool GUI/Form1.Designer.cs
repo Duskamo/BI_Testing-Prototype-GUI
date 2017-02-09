@@ -59,7 +59,6 @@ namespace BI_Tool_GUI
             this.mlProjectTitle = new MetroFramework.Controls.MetroLabel();
             this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
             this.mappingSaveBtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridMapping)).BeginInit();
@@ -95,7 +94,6 @@ namespace BI_Tool_GUI
             // 
             this.panel2.AutoScroll = true;
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.mappingSaveBtn);
             this.panel2.Controls.Add(this.dataGridMapping);
             this.panel2.Controls.Add(this.pictureBox1);
@@ -296,15 +294,6 @@ namespace BI_Tool_GUI
             this.mappingSaveBtn.UseVisualStyleBackColor = true;
             this.mappingSaveBtn.Click += new System.EventHandler(this.mappingSaveBtn_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(57, 49);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -361,7 +350,6 @@ namespace BI_Tool_GUI
         private DataGridViewComboBoxColumn TargetColumn;
         private DataGridViewCheckBoxColumn Key;
         private Button mappingSaveBtn;
-        private Button button1;
     }
 }
 
