@@ -197,10 +197,6 @@ namespace BI_Tool_GUI
 
         private void miTestMapColumns_Click(object sender, EventArgs e)
         {
-            //foreach(var x in dataGridMapping.Columns)
-            //{
-            //    Debug.WriteLine(x.ToString());
-            //}
             mappingSaveBtn.Visible = true;
             dataGridMapping.Visible = true;
         }
