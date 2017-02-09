@@ -1,0 +1,13 @@
+c:\users\dustin.landry\documents\visual studio 2015\Projects\BI Tool GUI\BI Tool GUI\bin\Debug\BI Tool GUI.exe.config
+D:\Professional\Perficient Tools\BI Tool GUI\BI Tool GUI\bin\Debug\BI Tool GUI.exe.config
+D:\Professional\Perficient Tools\BI Testing Tool\BI Tool GUI\BI Tool GUI\bin\Debug\BI Tool GUI.exe.config
+D:\Professional\Perficient Tools\BI Testing Tool\BI Tool GUI\BI Tool GUI\bin\Debug\BI Tool GUI.exe
+D:\Professional\Perficient Tools\BI Testing Tool\BI Tool GUI\BI Tool GUI\bin\Debug\BI Tool GUI.pdb
+D:\Professional\Perficient Tools\BI Testing Tool\BI Tool GUI\BI Tool GUI\obj\Debug\BI_Tool_GUI.Form1.resources
+D:\Professional\Perficient Tools\BI Testing Tool\BI Tool GUI\BI Tool GUI\obj\Debug\BI_Tool_GUI.Properties.Resources.resources
+D:\Professional\Perficient Tools\BI Testing Tool\BI Tool GUI\BI Tool GUI\obj\Debug\BI Tool GUI.csproj.GenerateResource.Cache
+D:\Professional\Perficient Tools\BI Testing Tool\BI Tool GUI\BI Tool GUI\obj\Debug\BI Tool GUI.exe
+D:\Professional\Perficient Tools\BI Testing Tool\BI Tool GUI\BI Tool GUI\obj\Debug\BI Tool GUI.pdb
+D:\Professional\Perficient Tools\BI Testing Tool\BI Tool GUI\BI Tool GUI\bin\Debug\MetroFramework.dll
+D:\Professional\Perficient Tools\BI Testing Tool\BI Tool GUI\BI Tool GUI\bin\Debug\MetroFramework.Fonts.dll
+D:\Professional\Perficient Tools\BI Testing Tool\BI Tool GUI\BI Tool GUI\obj\Debug\BI Tool GUI.csprojResolveAssemblyReference.cache
